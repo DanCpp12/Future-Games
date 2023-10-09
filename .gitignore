@@ -1,2 +1,2 @@
-#ignore libary directory
-/Library
+#ignore all files in Library directory
+Library/
