@@ -11,6 +11,7 @@ public class SceneManeger: MonoBehaviour
     public void ToMainmenu()
     {
         SceneID = 10;
+        menuData.TrackID = SceneID;
         LoadScene();
     }
 

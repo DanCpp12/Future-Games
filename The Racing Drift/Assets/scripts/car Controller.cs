@@ -76,7 +76,6 @@ public class carController : MonoBehaviour
             {
                 brakeTorque += 4.5f;
             }
-            Debug.Log(brakeTorque);
         }
     }
     private void setBoost()

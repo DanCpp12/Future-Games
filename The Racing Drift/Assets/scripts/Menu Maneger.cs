@@ -35,8 +35,13 @@ public class MenuManeger : MonoBehaviour
     public Canvas canvas;
     private void Start()
     {
-        LoadCarStats();
         TrackID = menuData.TrackID;
+        if (TrackID == 10)
+        {
+            getCar();
+            getTrack();
+            LoadCarStats();
+        }
     }
     public void getTrack()
     {
