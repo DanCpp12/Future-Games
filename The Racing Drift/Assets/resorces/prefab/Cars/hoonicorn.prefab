@@ -2050,7 +2050,7 @@ GameObject:
   - component: {fileID: 8249483822721220715}
   - component: {fileID: 706816351419766778}
   m_Layer: 0
-  m_Name: hoonicorn
+  m_Name: Hoonicorn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

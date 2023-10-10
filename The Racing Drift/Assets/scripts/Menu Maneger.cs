@@ -15,9 +15,9 @@ public class MenuManeger : MonoBehaviour
 
     public int TrackID;
 
-    public GameObject car1;
-    public GameObject car2;
-    public GameObject hoonicorn;
+    public GameObject GTR;
+    public GameObject GTR720;
+    public GameObject Hoonicorn;
     private int CarID;
 
     private int Power = 0;
@@ -59,27 +59,27 @@ public class MenuManeger : MonoBehaviour
         {
             if (CarID == 0)
             {
-                Power = car1.GetComponent<CarStats>().Power;
-                Stearing = car1.GetComponent<CarStats>().Stearing;
-                Braking = car1.GetComponent<CarStats>().Braking;
-                Boost = car1.GetComponent<CarStats>().Boost;
-                Drift = car1.GetComponent<CarStats>().Drift;
+                Power = GTR.GetComponent<CarStats>().Power;
+                Stearing = GTR.GetComponent<CarStats>().Stearing;
+                Braking = GTR.GetComponent<CarStats>().Braking;
+                Boost = GTR.GetComponent<CarStats>().Boost;
+                Drift = GTR.GetComponent<CarStats>().Drift;
             }
             else if (CarID == 1)
             {
-                Power = car2.GetComponent<CarStats>().Power;
-                Stearing = car2.GetComponent<CarStats>().Stearing;
-                Braking = car2.GetComponent<CarStats>().Braking;
-                Boost = car2.GetComponent<CarStats>().Boost;
-                Drift = car2.GetComponent<CarStats>().Drift;
+                Power = GTR720.GetComponent<CarStats>().Power;
+                Stearing = GTR720.GetComponent<CarStats>().Stearing;
+                Braking = GTR720.GetComponent<CarStats>().Braking;
+                Boost = GTR720.GetComponent<CarStats>().Boost;
+                Drift = GTR720.GetComponent<CarStats>().Drift;
             }
             else if (CarID == 2)
             {
-                Power = hoonicorn.GetComponent<CarStats>().Power;
-                Stearing = hoonicorn.GetComponent<CarStats>().Stearing;
-                Braking = hoonicorn.GetComponent<CarStats>().Braking;
-                Boost = hoonicorn.GetComponent<CarStats>().Boost;
-                Drift = hoonicorn.GetComponent<CarStats>().Drift;
+                Power = Hoonicorn.GetComponent<CarStats>().Power;
+                Stearing = Hoonicorn.GetComponent<CarStats>().Stearing;
+                Braking = Hoonicorn.GetComponent<CarStats>().Braking;
+                Boost = Hoonicorn.GetComponent<CarStats>().Boost;
+                Drift = Hoonicorn.GetComponent<CarStats>().Drift;
             }
             powerText.text = Power.ToString();
             brakingText.text = Braking.ToString();

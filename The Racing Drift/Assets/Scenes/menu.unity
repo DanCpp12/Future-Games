@@ -1035,9 +1035,9 @@ MonoBehaviour:
   dropdownCar: {fileID: 652941557}
   menuData: {fileID: 11400000, guid: 6da0face4b151814f9b2d0544ae2d7b8, type: 2}
   TrackID: 0
-  car1: {fileID: 2485814989600339135, guid: e845acba20a9df84fb1d6bd23dbe5fcd, type: 3}
-  car2: {fileID: 2485814989600339135, guid: 463430c9645dde140b897abc8f226608, type: 3}
-  hoonicorn: {fileID: 2485814989600339135, guid: 9911c099a928afa4387d2a0f357f4d19, type: 3}
+  GTR: {fileID: 2485814989600339135, guid: e845acba20a9df84fb1d6bd23dbe5fcd, type: 3}
+  GTR720: {fileID: 2485814989600339135, guid: 463430c9645dde140b897abc8f226608, type: 3}
+  Hoonicorn: {fileID: 2485814989600339135, guid: 9911c099a928afa4387d2a0f357f4d19, type: 3}
   powerText: {fileID: 2055319760}
   stearingText: {fileID: 1377954924}
   brakingText: {fileID: 1382171208}

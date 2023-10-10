@@ -9,8 +9,8 @@ public class TrackManeger : MonoBehaviour
     public MenuData menuData;
     public SceneManeger Scene;
 
-    public GameObject car1;
-    public GameObject car2;
+    public GameObject GTR;
+    public GameObject GTR720;
     public GameObject Hoonicorn;
     public Transform parent;
 
@@ -36,11 +36,11 @@ public class TrackManeger : MonoBehaviour
         //GameObject child;
         if (CarID == 0)
         {
-            Instantiate(car1, parent);
+            Instantiate(GTR, parent);
         }
         else if (CarID == 1)
         {
-            Instantiate(car2, parent);
+            Instantiate(GTR720, parent);
         }
         else if(CarID == 2)
         {

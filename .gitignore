@@ -1,2 +1,3 @@
 #ignore the Library directory
-Library/
+*/[Ll]ibrary/
+*/[Tt]emp/
