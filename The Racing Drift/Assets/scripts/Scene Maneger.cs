@@ -8,6 +8,11 @@ public class SceneManeger: MonoBehaviour
     public MenuData menuData;
     public int SceneID = 0;
 
+    public void Start()
+    {
+        SceneID = menuData.TrackID;
+    }
+
     public void ToMainmenu()
     {
         SceneID = 10;
@@ -37,16 +42,15 @@ public class SceneManeger: MonoBehaviour
     }
     public void nextRace()
     {
-        if (SceneID == 2)
+        SceneID++;
+        if (SceneID > 2)
         {
-            SceneID = 10;
+            ToMainmenu();
         }
         else
         {
-            SceneID++;
+            menuData.TrackID = SceneID;
+            LoadScene();
         }
-        menuData.TrackID = SceneID;
-        LoadScene();
-        Debug.Log("Enterd nextRace()");
     }
 }

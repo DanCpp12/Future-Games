@@ -100,6 +100,15 @@ public class TrackManeger : MonoBehaviour
                 Scene.nextRace();
             }
             allcheckpoints = false;
+            splitChekpoint.Checkpoint = false;
+            if (menuData.TrackID > 0)
+            {
+                antiCheatChekpoint1.Checkpoint = false;
+                if (menuData.TrackID > 0)
+                {
+                    antiCheatChekpoint2.Checkpoint = false;
+                }
+            }
         }
     }
 }

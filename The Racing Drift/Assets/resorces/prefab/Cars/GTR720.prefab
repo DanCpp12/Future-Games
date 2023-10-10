@@ -285,7 +285,7 @@ Rigidbody:
   m_Mass: 1500
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: -1}
+  m_CenterOfMass: {x: 0, y: -0.3, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
   m_IncludeLayers:
@@ -490,7 +490,7 @@ MonoBehaviour:
   - 0.4
   - 0
   gearNum: 0
-  handBrakeFrictionMultiplier: 2
+  driftMultiplier: 5
 --- !u!114 &2467993007496778135
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -975,10 +975,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu: {fileID: 6358745347432389859}
   menuData: {fileID: 11400000, guid: 6da0face4b151814f9b2d0544ae2d7b8, type: 2}
-  car1: {fileID: 2485814989600339135, guid: e845acba20a9df84fb1d6bd23dbe5fcd, type: 3}
-  car2: {fileID: 2485814989600339135, guid: 463430c9645dde140b897abc8f226608, type: 3}
+  Scene: {fileID: 724650293909006798}
+  GTR: {fileID: 2485814989600339135, guid: e845acba20a9df84fb1d6bd23dbe5fcd, type: 3}
+  GTR720: {fileID: 2485814989600339135, guid: 463430c9645dde140b897abc8f226608, type: 3}
   Hoonicorn: {fileID: 2485814989600339135, guid: 9911c099a928afa4387d2a0f357f4d19, type: 3}
   parent: {fileID: 0}
+  Finish: {fileID: 0}
+  splitChekpoint: {fileID: 0}
+  antiCheatChekpoint1: {fileID: 0}
+  antiCheatChekpoint2: {fileID: 0}
   CarID: 0
 --- !u!114 &6358745347432389859
 MonoBehaviour:
@@ -996,9 +1001,16 @@ MonoBehaviour:
   TrackManeger: {fileID: 3583628014403058107}
   dropdownTrack: {fileID: 0}
   dropdownCar: {fileID: 0}
-  menuData: {fileID: 0}
+  menuData: {fileID: 11400000, guid: 6da0face4b151814f9b2d0544ae2d7b8, type: 2}
   TrackID: 0
-  CarID: 0
+  GTR: {fileID: 0}
+  GTR720: {fileID: 0}
+  Hoonicorn: {fileID: 0}
+  powerText: {fileID: 0}
+  stearingText: {fileID: 0}
+  brakingText: {fileID: 0}
+  boostText: {fileID: 0}
+  driftText: {fileID: 0}
   canvas: {fileID: 8406421694916763262}
 --- !u!114 &724650293909006798
 MonoBehaviour:
@@ -1012,6 +1024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd370fe33738ca4d82e9d4a4c05ad3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuData: {fileID: 11400000, guid: 6da0face4b151814f9b2d0544ae2d7b8, type: 2}
   SceneID: 0
 --- !u!114 &5400120057731694268
 MonoBehaviour:

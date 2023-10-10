@@ -2698,6 +2698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: slim and short
       objectReference: {fileID: 0}
+    - target: {fileID: 6463301492460003437, guid: 952fc2916d1c0684bbd4769ec17e8488, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6708435878722972161, guid: 952fc2916d1c0684bbd4769ec17e8488, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -8382,10 +8386,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 724650293909006798, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: menuData
-      value: 
-      objectReference: {fileID: 11400000, guid: 6da0face4b151814f9b2d0544ae2d7b8, type: 2}
     - target: {fileID: 3071358715334391056, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
       propertyPath: m_Type
       value: 1
@@ -8395,10 +8395,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 3583628014403058107, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: GTR
-      value: 
-      objectReference: {fileID: 2485814989600339135, guid: e845acba20a9df84fb1d6bd23dbe5fcd, type: 3}
-    - target: {fileID: 3583628014403058107, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
       propertyPath: car1
       value: 
       objectReference: {fileID: 2485814989600339135, guid: e845acba20a9df84fb1d6bd23dbe5fcd, type: 3}
@@ -8407,21 +8403,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2485814989600339135, guid: 463430c9645dde140b897abc8f226608, type: 3}
     - target: {fileID: 3583628014403058107, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: menu
-      value: 
-      objectReference: {fileID: 1998306515}
-    - target: {fileID: 3583628014403058107, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: Scene
-      value: 
-      objectReference: {fileID: 1998306520}
-    - target: {fileID: 3583628014403058107, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
       propertyPath: Finish
       value: 
       objectReference: {fileID: 53755741}
-    - target: {fileID: 3583628014403058107, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: GTR720
-      value: 
-      objectReference: {fileID: 2485814989600339135, guid: 463430c9645dde140b897abc8f226608, type: 3}
     - target: {fileID: 3583628014403058107, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
       propertyPath: finish
       value: 
@@ -8430,14 +8414,6 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 883630506}
-    - target: {fileID: 3583628014403058107, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: menuData
-      value: 
-      objectReference: {fileID: 11400000, guid: 6da0face4b151814f9b2d0544ae2d7b8, type: 2}
-    - target: {fileID: 3583628014403058107, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: Hoonicorn
-      value: 
-      objectReference: {fileID: 2485814989600339135, guid: 9911c099a928afa4387d2a0f357f4d19, type: 3}
     - target: {fileID: 3583628014403058107, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
       propertyPath: splitChekpoint
       value: 
@@ -8498,6 +8474,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5400120057731694268, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400120057731694268, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: b05bbcbd-85d2-4288-b80b-939a8c4d6700
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400120057731694268, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: car/gear[/Keyboard/upArrow,/Keyboard/downArrow]
+      objectReference: {fileID: 0}
     - target: {fileID: 6358745347432389859, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
       propertyPath: car1
       value: 
@@ -8511,25 +8499,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6358745347432389859, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: Scene
-      value: 
-      objectReference: {fileID: 1998306520}
-    - target: {fileID: 6358745347432389859, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 1998306519}
-    - target: {fileID: 6358745347432389859, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: menuData
-      value: 
-      objectReference: {fileID: 11400000, guid: 6da0face4b151814f9b2d0544ae2d7b8, type: 2}
-    - target: {fileID: 6358745347432389859, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
       propertyPath: hoonicorn
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6358745347432389859, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-      propertyPath: TrackManeger
-      value: 
-      objectReference: {fileID: 1998306516}
     - target: {fileID: 6455775222022767204, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
       propertyPath: m_Transition
       value: 0
@@ -12313,22 +12285,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e44140dfb7ca84a43944209760bfcace, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!223 &1998306519 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 8406421694916763262, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-  m_PrefabInstance: {fileID: 1172010924}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1998306520 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 724650293909006798, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
-  m_PrefabInstance: {fileID: 1172010924}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dd370fe33738ca4d82e9d4a4c05ad3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!43 &2049732001
