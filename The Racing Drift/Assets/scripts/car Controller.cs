@@ -14,16 +14,12 @@ public class carController : MonoBehaviour
     public Rigidbody rb;
 
     //Inputs
-    private float vairableinput1;
-    private float vairableinput2;
-    private float vairableinput3;
+    private float turningInput;
+    private float gassInput;
+    private float gearInput;
     private bool input1 = false;
     private bool HandBrake = false;
     private bool nos = false;
-    private bool NotPressed1;
-    private bool NotPressed2;
-    private bool HandBrakeNP;
-    private bool NosNP;
 
     //wheel data
     public List<wheelinfo> wheels = new List<wheelinfo>();
@@ -96,36 +92,36 @@ public class carController : MonoBehaviour
     //Inputs
     public void gass(InputAction.CallbackContext ctxGass)
     {
-        NotPressed1 = ctxGass.ReadValue<float>() == default;
-        if (NotPressed1 == false)
+        bool NotPressed = ctxGass.ReadValue<float>() == default;
+        if (NotPressed == false)
         {
             input1 = true;
-            vairableinput2 = ctxGass.ReadValue<float>();
+            gassInput = ctxGass.ReadValue<float>();
 
         }
         else
         {
             input1 = false;
-            vairableinput2 = 0;
+            gassInput = 0;
         }
 
     }
     public void turn(InputAction.CallbackContext ctxTurn)
     {
-        NotPressed2 = ctxTurn.ReadValue<float>() == default;
-        if (NotPressed2 == false)
+        bool NotPressed = ctxTurn.ReadValue<float>() == default;
+        if (NotPressed == false)
         {
-            vairableinput1 = ctxTurn.ReadValue<float>();
+            turningInput = ctxTurn.ReadValue<float>();
         }
         else
         {
-            vairableinput1 = 0;
+            turningInput = 0;
         }
     }
     public void handbrake(InputAction.CallbackContext ctxHandbrake)
     {
-        HandBrakeNP = ctxHandbrake.ReadValue<float>() == default;
-        if (HandBrakeNP == false)
+        bool NotPressed = ctxHandbrake.ReadValue<float>() == default;
+        if (NotPressed == false)
         {
             HandBrake = true;
         }
@@ -136,8 +132,8 @@ public class carController : MonoBehaviour
     }
     public void NOS(InputAction.CallbackContext ctxNOS)
     {
-        NosNP = ctxNOS.ReadValue<float>() == default;
-        if (NosNP == false)
+        bool NotPressed = ctxNOS.ReadValue<float>() == default;
+        if (NotPressed == false)
         {
             nos = true;
         }
@@ -150,11 +146,11 @@ public class carController : MonoBehaviour
     {
         if ((ctxGear.ReadValue<float>() == default) == false) 
         {
-            vairableinput3 = ctxGear.ReadValue<float>();
+            gearInput = ctxGear.ReadValue<float>();
         }
         else
         {
-            vairableinput3 = 0;
+            gearInput = 0;
         }
     }
 
@@ -196,7 +192,7 @@ public class carController : MonoBehaviour
                     wheel.leftWheel.brakeTorque = 0;
                     wheel.rightWheel.brakeTorque = 0;
                 }
-                //Boost
+                //Nitrous Oxide System 
                 if (nos == true)
                 {
                     wheel.leftWheel.motorTorque = (totalPower / 2) * boost;
@@ -212,20 +208,20 @@ public class carController : MonoBehaviour
         {
             if (wheel.steering)
             {
-                if (vairableinput1 > 0)
+                if (turningInput > 0)
                 {
-                    wheel.leftWheel.steerAngle = Mathf.Rad2Deg * Mathf.Atan(WB / (steeringR + (TW / 2))) * vairableinput1;
-                    wheel.rightWheel.steerAngle = Mathf.Rad2Deg * Mathf.Atan(WB / (steeringR - (TW / 2))) * vairableinput1;
+                    wheel.leftWheel.steerAngle = Mathf.Rad2Deg * Mathf.Atan(WB / (steeringR + (TW / 2))) * turningInput;
+                    wheel.rightWheel.steerAngle = Mathf.Rad2Deg * Mathf.Atan(WB / (steeringR - (TW / 2))) * turningInput;
                 }
-                else if (vairableinput1 < 0)
+                else if (turningInput < 0)
                 {
-                    wheel.leftWheel.steerAngle = Mathf.Rad2Deg * Mathf.Atan(WB / (steeringR - (TW / 2))) * vairableinput1;
-                    wheel.rightWheel.steerAngle = Mathf.Rad2Deg * Mathf.Atan(WB / (steeringR + (TW / 2))) * vairableinput1;
+                    wheel.leftWheel.steerAngle = Mathf.Rad2Deg * Mathf.Atan(WB / (steeringR - (TW / 2))) * turningInput;
+                    wheel.rightWheel.steerAngle = Mathf.Rad2Deg * Mathf.Atan(WB / (steeringR + (TW / 2))) * turningInput;
                 }
                 else
                 {
-                    wheel.leftWheel.steerAngle = vairableinput1;
-                    wheel.rightWheel.steerAngle = vairableinput1;
+                    wheel.leftWheel.steerAngle = turningInput;
+                    wheel.rightWheel.steerAngle = turningInput;
                 }
             }
         }
@@ -254,7 +250,7 @@ public class carController : MonoBehaviour
     private void CalculateEnginePower()
     {
         wheelRPM();
-        totalPower = (EnginenTorque.Evaluate(engineRPM) + (carStats.Power * 2)) * (gears[gearNum]) * vairableinput2;
+        totalPower = (EnginenTorque.Evaluate(engineRPM) + (carStats.Power * 2)) * (gears[gearNum]) * gassInput;
         float velocety = 0;
         engineRPM = Mathf.SmoothDamp(engineRPM, 1000 + (Mathf.Abs(wheelsRPM) * (gears[gearNum])), ref velocety, smoothTime);
         MoveCar();
@@ -277,21 +273,21 @@ public class carController : MonoBehaviour
     }
     private void gear()
     {
-        if (vairableinput3 == 1)
+        if (gearInput == 1)
         {
             if (gearNum < 4)
             {
                 gearNum++;
             }
         }
-        else if (vairableinput3 == -1)
+        else if (gearInput == -1)
         {
             if (gearNum > 0)
             {
                 gearNum--;
             }
         }
-        vairableinput3 = 0;
+        gearInput = 0;
     }
 
     //Drift
@@ -307,11 +303,12 @@ public class carController : MonoBehaviour
             }
             if (wheelHit.sidewaysSlip < 0)
             {
-                tempo = (1 + -vairableinput2) * Mathf.Abs(wheelHit.sidewaysSlip * driftMultiplier);
+                
+                tempo = (1 + -gassInput) * Mathf.Abs(wheelHit.sidewaysSlip * driftMultiplier);
             }
             if (wheelHit.sidewaysSlip > 0)
             {
-                tempo = (1 + vairableinput2) * Mathf.Abs(wheelHit.sidewaysSlip * driftMultiplier);
+                tempo = (1 + gassInput) * Mathf.Abs(wheelHit.sidewaysSlip * driftMultiplier);
             }
             if (wheelHit.sidewaysSlip > 1.5f || wheelHit.sidewaysSlip < -1.5f)
             {

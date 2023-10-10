@@ -7,7 +7,6 @@ public class CheckpointManager : MonoBehaviour
 {
     public GameObject hitbox;
     public TrackManeger trackManeger;
-    //public GameObject car;
     public bool finish;
     public bool Checkpoint;
     public int lap = 0;
@@ -31,8 +30,4 @@ public class CheckpointManager : MonoBehaviour
         }
         return false;
     }
-    /*public bool split()
-    {
-        return;
-    }*/ 
 }

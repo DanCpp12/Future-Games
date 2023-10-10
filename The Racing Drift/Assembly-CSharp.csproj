@@ -62,6 +62,7 @@
     <Compile Include="Assets\scripts\Dropdown Maneger.cs" />
     <Compile Include="Assets\scripts\Track Maneger.cs" />
     <Compile Include="Assets\resorces\prefab\data\menuData.cs" />
+    <Compile Include="Assets\scripts\CarUI.cs" />
     <Compile Include="Assets\scripts\Menu Maneger.cs" />
     <Compile Include="Assets\scripts\Checkpoint Manager.cs" />
     <Compile Include="Assets\scripts\Scene Maneger.cs" />

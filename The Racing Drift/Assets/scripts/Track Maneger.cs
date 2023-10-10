@@ -97,14 +97,14 @@ public class TrackManeger : MonoBehaviour
             Finish.lap++;
             if (Finish.lap == NumLap)
             {
-                Scene.nextRace();
+                Scene.ToMainmenu();
             }
             allcheckpoints = false;
             splitChekpoint.Checkpoint = false;
-            if (menuData.TrackID > 0)
+            if (menuData.TrackID == 1 || menuData.TrackID == 2)
             {
                 antiCheatChekpoint1.Checkpoint = false;
-                if (menuData.TrackID > 0)
+                if (menuData.TrackID == 2)
                 {
                     antiCheatChekpoint2.Checkpoint = false;
                 }
