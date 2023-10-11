@@ -8502,6 +8502,10 @@ PrefabInstance:
       propertyPath: hoonicorn
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6358745347432389859, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
+      propertyPath: pauseMenuCanvas
+      value: 
+      objectReference: {fileID: 1998306521}
     - target: {fileID: 6455775222022767204, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
       propertyPath: m_Transition
       value: 0
@@ -12287,6 +12291,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44140dfb7ca84a43944209760bfcace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &1998306521 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8406421694916763262, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
+  m_PrefabInstance: {fileID: 1172010924}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &2049732001
 Mesh:
   m_ObjectHideFlags: 0

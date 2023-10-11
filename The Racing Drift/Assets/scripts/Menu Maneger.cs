@@ -32,7 +32,7 @@ public class MenuManeger : MonoBehaviour
     public TextMeshProUGUI driftText;
     
 
-    public Canvas canvas;
+    public Canvas pauseMenuCanvas;
     private void Start()
     {
         TrackID = menuData.TrackID;
@@ -119,12 +119,10 @@ public class MenuManeger : MonoBehaviour
 
     public void Pause()
     {
-        canvas = FindObjectOfType<Canvas>();
-        canvas.enabled = true;
+        pauseMenuCanvas.enabled = true;
     }
     public void Resume()
     {
-        canvas = FindObjectOfType<Canvas>();
-        canvas.enabled = false;
+        pauseMenuCanvas.enabled = false;
     }
 }

@@ -29961,6 +29961,10 @@ PrefabInstance:
       propertyPath: TrackManeger
       value: 
       objectReference: {fileID: 1243739461}
+    - target: {fileID: 6358745347432389859, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
+      propertyPath: pauseMenuCanvas
+      value: 
+      objectReference: {fileID: 414252788430554279}
     - target: {fileID: 6455775222022767204, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -30110,6 +30114,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
+--- !u!223 &414252788430554279 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8406421694916763262, guid: 1a91c03d90dff9944aef06af2690bea1, type: 3}
+  m_PrefabInstance: {fileID: 414252788430554278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

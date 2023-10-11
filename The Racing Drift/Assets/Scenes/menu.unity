@@ -721,7 +721,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 257, y: -400}
-  m_SizeDelta: {x: 2, y: 805}
+  m_SizeDelta: {x: 2, y: 2000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &509654876
 MonoBehaviour:
@@ -1043,7 +1043,7 @@ MonoBehaviour:
   brakingText: {fileID: 1382171208}
   boostText: {fileID: 314611974}
   driftText: {fileID: 1621506192}
-  canvas: {fileID: 0}
+  pauseMenuCanvas: {fileID: 0}
 --- !u!114 &621677989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3105,7 +3105,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 560, y: -400}
-  m_SizeDelta: {x: 2, y: 805}
+  m_SizeDelta: {x: 2, y: 2000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1331870851
 MonoBehaviour:
@@ -4312,7 +4312,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1785404300}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 621677988}
+        m_TargetAssemblyTypeName: MenuManeger, Assembly-CSharp
+        m_MethodName: quitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1785404300
 MonoBehaviour:
   m_ObjectHideFlags: 0
