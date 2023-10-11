@@ -10,6 +10,7 @@ Controls:
 	Esc		pause/resume
 
 
+You can drift by braking and thurning
 all the cars behave diffrently (they have difrent stats and torque curves).
 the tracks are 2 laps.
 be carful not to flip your car (if you do restart the race).
@@ -20,7 +21,9 @@ I looked up what it is on wikipedia and implimented it the variables are wb = "d
 
 
 thigns I wanted to have but did not have the time for is split time and memory of the best time/leader board, boost meter and when you drift it would refill the boost meter.
+exept for that I belive that I got in all the behaviors I wanted drifting and boosting they are prety selfexlanetory if you dont know what drifting it is the art of controling an out of control vehicle with style.
 
+I structured my code so each class gets it own fille.
 
 
 things I did wrong:
@@ -34,3 +37,5 @@ this was my first time using Unity so I am not familar with the Unity commands s
 the first thing I looked at unitys documentation of the wheel coliders to start.
 all the tutorials I used exists in this youtube playlist (https://www.youtube.com/playlist?list=PLhWBaV_gmpGXxscZr8PIcreyYkw8VlnKn) I did not use every tutorial in that playlist.
 the good thing about that playlist is that it is one project and made by one person so you can see how the difrent parts work together.
+
+Daniel Estéen
