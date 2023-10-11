@@ -26,6 +26,7 @@ public class carController : MonoBehaviour
     public float boost = 3;
     private float brakeTorque = 200;
     private float steeringR = 8;
+    //wheel base
     public float WB = 3.2f;
     public float TW = 2.4f;
 
